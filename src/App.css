@@ -60,7 +60,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 
 .hero-container h1 {
@@ -79,14 +79,15 @@
   align-items: center;
   justify-content: center;
   padding: 0 40px;
-  border: 2px solid blue;
+  background-color: #f2f2f5;
+  /* border: 2px solid blue; */
 }
 
 .about-me-container .sub {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .headshot {
@@ -108,7 +109,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
-  background-color: #f2f2f5;
+  /* background-color: #f2f2f5; */
 }
 
 .projects-container .project {
@@ -119,7 +120,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .project .project-image {
