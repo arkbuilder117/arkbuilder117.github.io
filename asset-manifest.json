@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.3d38c34a.css",
+    "main.js": "/portfolio/static/js/main.dc1d4c8d.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/AVRS_logo.png": "/portfolio/static/media/AVRS_logo.edc6540ad1b9c4e24a6b.png",
+    "static/media/headshot.jpeg": "/portfolio/static/media/headshot.1b8c1cc433a2c758fcd5.jpeg",
+    "static/media/cpp_logo.png": "/portfolio/static/media/cpp_logo.666af1b3598c92045b63.png",
+    "static/media/Noah_Walker_resume.pdf": "/portfolio/static/media/Noah_Walker_resume.c5db469d816fec2821f7.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.3d38c34a.css.map": "/portfolio/static/css/main.3d38c34a.css.map",
+    "main.dc1d4c8d.js.map": "/portfolio/static/js/main.dc1d4c8d.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d38c34a.css",
+    "static/js/main.dc1d4c8d.js"
+  ]
+}
