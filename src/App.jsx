@@ -1,4 +1,5 @@
 import "./App.css";
+import * as React from 'react';
 import headshot from "./img/headshot.jpeg";
 import AVRSLogo from "./img/AVRS_logo.png";
 import XAMPPLogo from "./img/xamppLogo.png";
@@ -6,8 +7,38 @@ import CppLogo from "./img/cpp_logo.png";
 import resume from "./static/Noah_Walker_resume.pdf";
 import {BsLinkedin, BsGithub} from "react-icons/bs"
 import {SiGmail} from "react-icons/si";
+import {AiOutlineMenu} from "react-icons/ai";
 
 function App() {
+  const dropdownRef = React.useRef(null);
+  const [isClicked, setIsClicked] = React.useState(false);
+
+  const buttonClick = () => {
+    setIsClicked(!isClicked);
+  };
+
+  React.useEffect(() => {
+    const pageClickEvent = (e) => {
+      console.log(e);
+      console.log(e.target)
+      if (dropdownRef.current !== null && !dropdownRef.current.contains(e.target)) {
+        console.log(isClicked);
+        setIsClicked(!isClicked);
+      }
+    };
+
+    if (isClicked) {
+      window.addEventListener('click', pageClickEvent);
+      console.log('Event listener added');
+    }
+
+    return () => {
+      window.removeEventListener('click', pageClickEvent);
+      console.log('Event listener removed');
+    };
+
+  }, [isClicked]);
+
   const projectsAttr = [{
     name: "Automated Vending and Reservation System",
     description: "UT Arlington Senior Design capstone project to allow users to purchase items from a vending machine in advance using a paired mobile app.",
@@ -24,6 +55,17 @@ function App() {
   return (
     <div className="container-lg">
       <Navbar />
+
+      <div ref={dropdownRef} className="dropdown">
+        <button className="dropbtn" onClick={buttonClick}><AiOutlineMenu/></button>
+        <nav className={`menu ${isClicked ? 'active' : 'inactive'}`}>
+          <ul className="dropdown-content">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
       <div className="hero-container">
         {/* <p>Hello there, I'm</p> */}
