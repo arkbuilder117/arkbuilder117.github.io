@@ -95,7 +95,7 @@ function App() {
               <li>Served as lead mobile app developer on a team of four engineering students</li>
               <li> Three-tiered architecture with the mobile app as the front end, a raspberry pi controlling the machine as our back end, and Google Firebase acting as middle wear allowing communication between the two.</li>
             </ul>
-            <a href="https://github.com/willpanderson/AVRS">View Project</a>
+            <a href="https://github.com/willpanderson/AVRS" target={"_blank"} rel="noreferrer">View Project</a>
           </div>
         </div>
         <div className="project">
@@ -107,9 +107,15 @@ function App() {
             <p>UT Arlington Databases course team project using relational database with MySQL using XAMPP server and server-side rendered html and PHP.</p>
             <ul>
               <li>Created an ER Diagram to identify relationships between tables.</li>
-              <li>Supported read, write, and delete operations.</li>
+              <li>Performed queries on the database. Examples include: </li>
+              <ul>
+                <li>Retrieve the county names and the dates when their daily count cases and daily deaths differed by 100.</li>
+                <li>Retrieve, the total, average, maximum number of new daily confirmed covid 19 cases in the a state in a particular month.</li>
+              </ul>
+              <li>User interface supported read, write, and delete operations.</li>
             </ul>
-            <a href="https://github.com/willpanderson/AVRS">View Project</a>
+            {/* <a href="https://github.com/willpanderson/AVRS">View Project</a> */}
+            <h4>Project code available on request. As per UTA guidelines.</h4>
           </div>
         </div>
         <div className="project">
@@ -124,7 +130,7 @@ function App() {
               <li>Each user ran on a separate thread, and each house contained a mutex to only allow one user at a time.</li>
               <li>Different house classes were built off a base house class.</li>
             </ul>
-            <a href="https://github.com/willpanderson/AVRS">View Project</a>
+            <a href="https://github.com/willpanderson/AVRS" target={"_blank"} rel="noreferrer">View Project</a>
           </div>
         </div>
       </div>
