@@ -130,7 +130,7 @@ function App() {
               <li>Each user ran on a separate thread, and each house contained a mutex to only allow one user at a time.</li>
               <li>Different house classes were built off a base house class.</li>
             </ul>
-            <a href="https://github.com/willpanderson/AVRS" target={"_blank"} rel="noreferrer">View Project</a>
+            <a href="https://github.com/arkbuilder117/TrickOrTreat" target={"_blank"} rel="noreferrer">View Project</a>
           </div>
         </div>
       </div>
