@@ -1,3 +1,4 @@
+import {Navbar} from './NavbarComponent';
 import "./App.css";
 import * as React from 'react';
 import headshot from "./img/headshot.jpeg";
@@ -39,18 +40,18 @@ function App() {
 
   }, [isClicked]);
 
-  const projectsAttr = [{
-    name: "Automated Vending and Reservation System",
-    description: "UT Arlington Senior Design capstone project to allow users to purchase items from a vending machine in advance using a paired mobile app.",
-  },
-  {
-    name: "Covid 19 Database",
-    description: "UT Arlington Databases course, team project using relational database with MySQL using XAMPP server and server-side rendered html and PHP that supported read, write, and delete operations.",
-  }, 
-  {
-    name: "Trick Or Treat Simulator",
-    description: "UT Arlington Object-oriented course project to simulate users going to different types of houses one at a time.",
-  }];
+  // const projectsAttr = [{
+  //   name: "Automated Vending and Reservation System",
+  //   description: "UT Arlington Senior Design capstone project to allow users to purchase items from a vending machine in advance using a paired mobile app.",
+  // },
+  // {
+  //   name: "Covid 19 Database",
+  //   description: "UT Arlington Databases course, team project using relational database with MySQL using XAMPP server and server-side rendered html and PHP that supported read, write, and delete operations.",
+  // }, 
+  // {
+  //   name: "Trick Or Treat Simulator",
+  //   description: "UT Arlington Object-oriented course project to simulate users going to different types of houses one at a time.",
+  // }];
 
   return (
     <div className="container-lg">
@@ -150,15 +151,5 @@ function App() {
 
 export default App;
 
-function Navbar({}) {
-  return (
-    <div className="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  );
-};
+
   
